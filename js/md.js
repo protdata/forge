@@ -69,7 +69,11 @@ define = function(ids, factory) {
   return define.apply(null, Array.prototype.slice.call(arguments, 0));
 };
 define(
-  ['require', 'module', './md5', './sha1', './sha256', './sha512'], function() {
-  defineFunc.apply(null, Array.prototype.slice.call(arguments, 0));
-});
+//  ['require', 'module', './md5', './sha1', './sha256', './sha512'], function() {
+//  defineFunc.apply(null, Array.prototype.slice.call(arguments, 0));
+//});
+
+  ['require', 'module', './md5', './sha1', './sha256'], function() {
+    defineFunc.apply(null, Array.prototype.slice.call(arguments, 0));
+  });
 })();

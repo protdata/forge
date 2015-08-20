@@ -251,12 +251,12 @@ forge.aes._updateBlock = _updateBlock;
 
 /** Register AES algorithms **/
 
-registerAlgorithm('AES-ECB', forge.cipher.modes.ecb);
-registerAlgorithm('AES-CBC', forge.cipher.modes.cbc);
+//registerAlgorithm('AES-ECB', forge.cipher.modes.ecb);
+//registerAlgorithm('AES-CBC', forge.cipher.modes.cbc);
 registerAlgorithm('AES-CFB', forge.cipher.modes.cfb);
-registerAlgorithm('AES-OFB', forge.cipher.modes.ofb);
-registerAlgorithm('AES-CTR', forge.cipher.modes.ctr);
-registerAlgorithm('AES-GCM', forge.cipher.modes.gcm);
+//registerAlgorithm('AES-OFB', forge.cipher.modes.ofb);
+//registerAlgorithm('AES-CTR', forge.cipher.modes.ctr);
+//registerAlgorithm('AES-GCM', forge.cipher.modes.gcm);
 
 function registerAlgorithm(name, mode) {
   var factory = function() {
